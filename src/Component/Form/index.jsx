@@ -99,7 +99,7 @@ function Form(props) {
 
     validationSchema: Yup.object({
       password: Yup.string()
-        .min(8, "Minimum 8 characters")
+        .min(6, "Minimum 6 characters")
         .required("Password is Required!"),
     }),
 
@@ -128,7 +128,7 @@ function Form(props) {
         .max(20, "Maximum 20 characters")
         .required("Name is Required!"),
       password: Yup.string()
-        .min(8, "Minimum 8 characters")
+        .min(6, "Minimum 6 characters")
         .required("Password is Required!"),
     }),
 
